@@ -994,25 +994,28 @@ summary:focus-visible {
   }
 
   .hero-inner {
-    padding-block: 40px 36px;
+    padding-block: 36px 40px;
   }
 
   .hero h1 {
-    font-size: clamp(2.8rem, 11vw, 4.4rem);
+    font-size: clamp(2.25rem, 10.4vw, 3.2rem);
     letter-spacing: -0.05em;
+    line-height: 1.05;
   }
 
   .hero-copy {
-    margin-top: 20px;
-    font-size: 1.05rem;
+    margin-top: 18px;
+    font-size: 1rem;
+    line-height: 1.55;
   }
 
   .hero-note {
-    margin-top: 28px;
+    margin-top: 24px;
   }
 
   .intro-actions {
     gap: 12px;
+    margin-top: 28px;
   }
 
   .work-section {
@@ -1037,8 +1040,8 @@ summary:focus-visible {
 
   .project-card,
   .project-card-featured {
-    min-height: 270px;
-    padding: 24px;
+    min-height: 0;
+    padding: clamp(20px, 5vw, 24px);
   }
 
   .project-card h3 {
@@ -1124,6 +1127,12 @@ summary:focus-visible {
     align-items: flex-start;
     flex-direction: column;
     gap: 8px;
+  }
+
+  .site-footer {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
   }
 }
 
