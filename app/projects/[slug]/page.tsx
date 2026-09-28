@@ -65,7 +65,7 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
               <p className="eyebrow">Let&apos;s connect</p>
               <h2 id="connect-title">Interested in this work?</h2>
               <p>Happy to share more about the thinking behind this project.</p>
-              <a className="text-link" href="mailto:yosefa.ferdianto@gmail.com">Email me ↗</a>
+              <a className="text-link" href="https://linkedin.com/in/yosefaferdianto" target="_blank" rel="noopener noreferrer">Message on LinkedIn ↗</a>
             </section>
           )}
         </div>
@@ -88,7 +88,7 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
         )}
         <div className="detail-end">
           <a className="text-link" href="/portfolio/">← Browse more projects</a>
-          <a className="text-link" href="mailto:yosefa.ferdianto@gmail.com">Discuss a project ↗</a>
+          <a className="text-link" href="https://linkedin.com/in/yosefaferdianto" target="_blank" rel="noopener noreferrer">Discuss a project ↗</a>
         </div>
       </div>
       <Footer />

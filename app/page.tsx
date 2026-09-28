@@ -17,7 +17,7 @@ export default function Home() {
           <p className="hero-copy">I build software and systems that help people get things done. From enterprise tools to everyday products.</p>
           <div className="intro-actions">
             <a className="button button-primary" href="/portfolio/">Explore my work <span aria-hidden="true">↗</span></a>
-            <a className="text-link" href="mailto:yosefa.ferdianto@gmail.com">Get in touch <span aria-hidden="true">↗</span></a>
+            <a className="text-link" href="/#contact">Get in touch <span aria-hidden="true">↗</span></a>
           </div>
           <p className="hero-note">Problem Solver at Heart</p>
         </div>
@@ -62,8 +62,7 @@ export default function Home() {
           <p>Have a project, an idea, or an opportunity? I&apos;d like to hear about it.</p>
         </div>
         <div className="contact-links">
-          <a className="button button-primary" href="mailto:yosefa.ferdianto@gmail.com">Email me <span aria-hidden="true">↗</span></a>
-          <a className="button button-secondary" href="https://linkedin.com/in/yosefaferdianto" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          <a className="button button-primary" href="https://linkedin.com/in/yosefaferdianto" target="_blank" rel="noopener noreferrer">Message on LinkedIn <span aria-hidden="true">↗</span></a>
           <a className="button button-secondary" href="https://github.com/yosefa" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
         </div>
       </section>
