@@ -19,7 +19,6 @@ export default function Home() {
             <a className="button button-primary" href="/portfolio/">Explore my work <span aria-hidden="true">↗</span></a>
             <a className="text-link" href="/#contact">Get in touch <span aria-hidden="true">↗</span></a>
           </div>
-          <p className="hero-note">Problem Solver at Heart</p>
         </div>
       </section>
 
