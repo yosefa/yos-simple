@@ -3,6 +3,7 @@ import ProjectCard from '@/components/ProjectCard'
 import Footer from '@/components/Footer'
 import Hero from '@/components/Hero'
 import { projects } from '@/data/projects'
+import { FiArrowRight, FiMessageCircle } from 'react-icons/fi'
 
 const featuredSlugs = ['integrated-erp-system', 'sap-transition-support', 'wytopup', 'okane']
 const featuredProjects = featuredSlugs.map((slug) => projects.find((project) => project.slug === slug)!)
@@ -17,8 +18,8 @@ export default function Home() {
           <h1 id="home-title">Making complex<br />work feel <span>simple.</span></h1>
           <p className="hero-copy">I build software and systems that help people get things done.<br />From enterprise tools to everyday products.</p>
           <div className="intro-actions">
-            <a className="button button-primary" href="/portfolio/">Explore my work <span aria-hidden="true">↗</span></a>
-            <a className="text-link" href="/#contact">Get in touch <span aria-hidden="true">↗</span></a>
+            <a className="button button-primary" href="/portfolio/">Explore my work <FiArrowRight size={18} aria-hidden="true" focusable="false" /></a>
+            <a className="text-link" href="/#contact">Get in touch <FiMessageCircle size={18} aria-hidden="true" focusable="false" /></a>
           </div>
         </div>
       </Hero>
