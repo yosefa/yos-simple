@@ -39,8 +39,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="container about-section" id="about" aria-labelledby="about-title">
-        <div className="about-panel">
+      <section className="container about-section" aria-labelledby="about-title">
+        <div className="about-panel" id="about">
           <div>
             <p className="eyebrow">About me</p>
             <h2 id="about-title">Thoughtful technology, built around people.</h2>
