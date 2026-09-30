@@ -1,6 +1,7 @@
 import Navigation from '@/components/Navigation'
 import ProjectCard from '@/components/ProjectCard'
 import Footer from '@/components/Footer'
+import Hero from '@/components/Hero'
 import { projects } from '@/data/projects'
 
 const featuredSlugs = ['integrated-erp-system', 'sap-transition-support', 'wytopup', 'okane']
@@ -10,21 +11,21 @@ export default function Home() {
   return (
     <main>
       <Navigation active="home" />
-      <section className="hero" id="home" aria-labelledby="home-title">
+      <Hero>
         <div className="container hero-inner">
           <p className="eyebrow">Yosefa Ferdianto <span aria-hidden="true">/</span> Software Engineer</p>
           <h1 id="home-title">Making complex<br />work feel <span>simple.</span></h1>
-          <p className="hero-copy">I build software and systems that help people get things done. From enterprise tools to everyday products.</p>
+          <p className="hero-copy">I build software and systems that help people get things done.<br />From enterprise tools to everyday products.</p>
           <div className="intro-actions">
             <a className="button button-primary" href="/portfolio/">Explore my work <span aria-hidden="true">↗</span></a>
             <a className="text-link" href="/#contact">Get in touch <span aria-hidden="true">↗</span></a>
           </div>
         </div>
-      </section>
+      </Hero>
 
-      <section className="work-section" id="projects" aria-labelledby="featured-title">
+      <section className="work-section" aria-labelledby="featured-title">
         <div className="container">
-          <div className="section-heading featured-heading">
+          <div className="section-heading featured-heading" id="projects">
             <div>
               <p className="eyebrow">Selected work</p>
               <h2 id="featured-title">Built for real life.</h2>
