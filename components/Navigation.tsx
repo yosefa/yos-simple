@@ -1,3 +1,7 @@
+'use client'
+
+import { useEffect, useState } from 'react'
+
 const links = [
   { label: 'Home', href: '/', key: 'home' },
   { label: 'Projects', href: '/portfolio/', key: 'projects' },
@@ -6,8 +10,42 @@ const links = [
 ]
 
 export default function Navigation({ active }: { active?: 'home' | 'projects' }) {
+  const [isCompact, setIsCompact] = useState(false)
+
+  useEffect(() => {
+    const getScrollY = () => Math.max(0, Math.min(
+      window.scrollY,
+      document.documentElement.scrollHeight - window.innerHeight,
+    ))
+    let previousY = getScrollY()
+    let distance = 0
+
+    const handleScroll = () => {
+      const currentY = getScrollY()
+      const delta = currentY - previousY
+      previousY = currentY
+
+      if (currentY <= 80) {
+        distance = 0
+        setIsCompact(false)
+        return
+      }
+
+      // Accumulate small movements, resetting whenever direction changes.
+      if (delta === 0) return
+      distance = Math.sign(delta) === Math.sign(distance) ? distance + delta : delta
+      if (Math.abs(distance) >= 10) {
+        setIsCompact(distance > 0)
+        distance = 0
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
   return (
-    <header className="site-header">
+    <header className={`site-header${isCompact ? ' is-compact' : ''}`}>
       <nav className="nav-container container" aria-label="Main navigation">
         <a className="brand" href="/" aria-label="Yosefa Ferdianto, home">
           <span className="brand-logo">YF</span>
